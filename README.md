@@ -1,1 +1,1 @@
-# Hangman-Game
+Here is the original folder set-up for the game.
