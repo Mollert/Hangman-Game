@@ -1,1 +1,1 @@
-Here is the original folder set-up for the game.
+All that is left if styling.

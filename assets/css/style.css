@@ -1,0 +1,18 @@
+body {
+	background-color: #66CDAA;
+	font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+	padding: 10px;
+}
+
+.list-inline {
+	text-align: center;
+
+
+}
+
+.base {
+	padding: 30px;
+}
