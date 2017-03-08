@@ -13,7 +13,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
-	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -25,23 +25,23 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="logo">
 					<img src="assets/images/hangman_logo.jpg" alt="Logo" width="300" height="400">
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-8">
 				<div class="row">
 					<div class="title">
-						<h2><center><strong>Hangman Game</strong></center></h2>
-						<h4><center>The theme is dog names and the rules are as follows.<center><h4>
-						<p>You should see the letters of the dog name you are guessing.  To start the game, just pick a letter.  If you match a letter in the name it will begin to be spelled out.  If not, you are on your way to be hung!  To get a new name, click on the "Try a new game" button.  I'll keep score.<p>
+						<h2><strong>Hangman Game</strong></h2>
+						<h4>The theme is dog names and the rules are as follows:</h4>
+						<p>It will tell you the letters of the dog name you are guessing.  To start the game, just pick a letter.  If you match a letter in the name it will begin to be spelled out.  If not, you are on your way to being hung!  To get a new name, click on the "Try a new game" button.  I'll keep score.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4">
 						<div class="hangman">
-							<img id="playing" src="assets/images/hangman_empty.jpg" alt="Stick Man" width="240" height="240">
+							<img id="playing" src="assets/images/hangman_empty.jpg" alt="Stick Man" width="200" height="230">
 						</div>
 					</div>
 					<div class="col-md-8">
@@ -54,7 +54,7 @@
 						        	<li id="rightLetter3"></li>
 						       		<li id="rightLetter4"></li>
 						       		<li id="rightLetter5"></li>
-									<li id="rightLetter6"></li>
+									    <li id="rightLetter6"></li>
 						     	</ul>
 							</div>
 						</div>
@@ -63,7 +63,7 @@
 								<h4>You get six wrong answers so good luck.</h4>
 								<h4>Below are the incorrect letters you chose.</h4>
 								<ul class="list-inline">
-									<li id="wrongLetter1">D</li>
+									 <li id="wrongLetter1">D</li>
 								   <li id="wrongLetter2">E</li>
 								   <li id="wrongLetter3">_</li>
 								   <li id="wrongLetter4">F</li>
@@ -78,17 +78,20 @@
 		</div>
 		<div class="row">
 			<div class="base">
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<div class="start-again">
 						<button type="button" id="start" class="btn btn-success">Start the game</button>
 						<button type="button" id="newGame" class="btn btn-info">Try a new game</button>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-2">
 					<div class="score">
 						<h4 id="wins">Wins = 0</h4>
 						<h4 id="losses">Losses = 0</h4>
 					</div>
+				</div>
+				<div class="col-md-5">
+					<div id="win-loss"></div>
 				</div>
 			</div>
 		</div>

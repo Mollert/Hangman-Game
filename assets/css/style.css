@@ -4,15 +4,57 @@ body {
 }
 
 .logo {
-	padding: 10px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.title h2, h4 {
+	text-align: center;
+}
+
+.dog-name,
+.guesses {
+	padding-top: 20px;
+}
+
+#howMany {
+	text-align: center;
+}
+
+.guesses {
+	text-align: center;
 }
 
 .list-inline {
+	font-size: 20px;
+	font-weight: bold;
 	text-align: center;
+}
 
-
+.hangman {
+	padding: 30px;
 }
 
 .base {
-	padding: 30px;
+	padding: 10px;
+}
+
+.start-again {
+	padding-top: 20px;
+}
+
+#start,
+#newGame {
+	padding: 10px;
+}
+
+.btn-success {
+	margin-right: 40px;
+}
+
+#win-loss {
+	padding-top: 14px;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
 }

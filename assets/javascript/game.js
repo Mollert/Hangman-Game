@@ -38,18 +38,24 @@ var losses = 0;
  	changeLetterNumber();
 
 	function showDogNameSpaces() {
-			if (1 < chosenDogName.length)
+			if (1 < chosenDogName.length) {
 				document.getElementById("rightLetter1").innerHTML = "_";
-			if (2 <= chosenDogName.length)
+			}
+			if (2 <= chosenDogName.length) {
 				document.getElementById("rightLetter2").innerHTML = "_";
-			if (3 <= chosenDogName.length)
+			}
+			if (3 <= chosenDogName.length) {
 				document.getElementById("rightLetter3").innerHTML = "_";
-			if (4 <= chosenDogName.length)
+			}
+			if (4 <= chosenDogName.length) {
 				document.getElementById("rightLetter4").innerHTML = "_";
-			if (5 <= chosenDogName.length)
+			}
+			if (5 <= chosenDogName.length) {
 				document.getElementById("rightLetter5").innerHTML = "_";
-			if (6 <= chosenDogName.length)
+			}
+			if (6 <= chosenDogName.length) {
 				document.getElementById("rightLetter6").innerHTML = "_";
+			}
 	}
 
   showDogNameSpaces();
@@ -124,11 +130,13 @@ var losses = 0;
 		if (numberRightGuesses === chosenDogName.length) {
 			wins ++
 			document.getElementById("wins").innerHTML = "Wins = " + wins;
+			document.getElementById("win-loss").innerHTML = "That's a win!!!";
 		}
 
 		if (numberWrongGuesses === 6) {
 			losses ++
 			document.getElementById("losses").innerHTML = "Losses = " + losses;
+			document.getElementById("win-loss").innerHTML = "The dog name was " + chosenDogName + ".";
 		}
 	}
 
@@ -145,10 +153,11 @@ var losses = 0;
 		removeGuesses();
 		choseDogName();
 		clearDogNameSpaces();
-		changeLetterNumber();		
+		changeLetterNumber();
 		showDogNameSpaces();
 		splitTheName();
 		document.getElementById("playing").src = stages[0];
+		document.getElementById("win-loss").innerHTML = "";
 		numberRightGuesses = 0;
 		numberWrongGuesses = 0;
 	}
@@ -166,8 +175,5 @@ var losses = 0;
 		reset();
 		console.log(chosenDogName)
 	});
-
-
-
 
  	   console.log(chosenDogName)
